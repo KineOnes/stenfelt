@@ -4,45 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside - Stenfeltbakken Grendelag</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="wrapper">
-        <nav class="sidebar">
-            <div class="logo">Stenfeltbakken Grendelag</div>
-            <ul>
-                <li><a href="index.html">Forside</a></li>
-                <li><a href="parking.html">Info om parkering</a></li>
-                <li><a href="community-house.html">Grendehusene</a></li>
-                <li><a href="previous-cases.html">Tidligere saker</a></li>
-                <li><a href="bylaws.html">Vedtekter</a></li>
-                <li><a href="board.html">Styre/utvalg</a></li>
-                <li><a href="rules.html">Info og alm. regler</a></li>
-                <li><a href="assemblies.html">Generalforsamlinger</a></li>
-                <li><a href="suppliers.html">Leverandører</a></li>
-                <li><a href="colors.html">Farger</a></li>
+<body class="flex flex-col h-screen bg-gray-100 text-gray-900">
+
+    <!-- Sidebar Navigation -->
+    <div class="flex h-full">
+        <nav class="w-64 bg-gray-800 text-white p-4 fixed h-full">
+            <div class="text-center mb-8 text-xl font-bold text-yellow-300">Stenfeltbakken Grendelag</div>
+            <ul class="space-y-4 text-center">
+                <li><a href="index.html" class="block py-2 text-gray-200 hover:text-yellow-300">Forside</a></li>
+                <li><a href="parking.html" class="block py-2 text-gray-200 hover:text-yellow-300">Info om parkering</a></li>
+                <li><a href="community-house.html" class="block py-2 text-gray-200 hover:text-yellow-300">Grendehusene</a></li>
+                <li><a href="previous-cases.html" class="block py-2 text-gray-200 hover:text-yellow-300">Tidligere saker</a></li>
+                <li><a href="bylaws.html" class="block py-2 text-gray-200 hover:text-yellow-300">Vedtekter</a></li>
+                <li><a href="board.html" class="block py-2 text-gray-200 hover:text-yellow-300">Styre/utvalg</a></li>
+                <li><a href="rules.html" class="block py-2 text-gray-200 hover:text-yellow-300">Info og alm. regler</a></li>
+                <li><a href="assemblies.html" class="block py-2 text-gray-200 hover:text-yellow-300">Generalforsamlinger</a></li>
+                <li><a href="suppliers.html" class="block py-2 text-gray-200 hover:text-yellow-300">Leverandører</a></li>
+                <li><a href="colors.html" class="block py-2 text-gray-200 hover:text-yellow-300">Farger</a></li>
             </ul>
         </nav>
 
-        <div class="main-content">
-            <section class="hero">
-                <h1>Velkommen til Stenfeltbakken Grendelag</h1>
-                <p>Et hyggelig nabolag</p>
+        <!-- Main Content Area -->
+        <div class="flex-1 ml-64 p-8">
+            <!-- Hero Section -->
+            <section class="bg-gray-700 text-white rounded-lg p-6 mb-6 text-center">
+                <h1 class="text-3xl font-semibold mb-2">Welcome to Stenfeltbakken Grendelag</h1>
+                <p class="text-lg text-gray-300">Your trusted community in the heart of nature.</p>
             </section>
 
-            <section class="content-section">
-                <h2>Hei alle sammen!</h2>
-                <h3>Høstmørket har kommet</h3>
-                <p> Siden det ikke er noe egen belysning på feltet, er vi alle avhengig av at alle har PÅ sine UTELYS. 
-                    Hvis alle er bidrar med lys på veiene mellom husene blir det er trygt å ferdes i grendelaget.</p>
-                <p>Hvis dere ser noen lyspærer som trengs å byttes på garasjeanleggene eller grendehusene, så send en 
-                    sms til styreleder Morten Hjulstad.</p><!-- Additional content here -->
+            <!-- Content Section -->
+            <section class="bg-white p-6 rounded-lg shadow mb-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">New Safety Fence</h2>
+                <p class="text-gray-600">A new safety fence has been installed along the walkway...</p>
+                <!-- Additional content here -->
             </section>
         </div>
     </div>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="bg-gray-200 text-gray-600 text-center p-4 mt-auto">
         <p>&copy; 2024 Stenfeltbakken Grendelag. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
