@@ -1,0 +1,197 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the body takes full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f9;
+    color: #333;
+}
+
+/* Wrapper for sidebar and main content */
+.wrapper {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: 250px;
+    background-color: #2e3a44;
+    color: #f5f7f9;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 2rem;
+    position: fixed;
+}
+
+.sidebar .logo {
+    font-size: 1.5rem;
+    color: #f5d49b;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* Sidebar link styles */
+.sidebar ul li a {
+    text-decoration: none;
+    color: #f5f7f9; /* Default link color */
+    font-size: 1rem;
+    display: block;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:visited,
+.sidebar ul li a:active {
+    color: #f5f7f9; /* Ensures consistent color for visited and active links */
+}
+
+.sidebar ul li a:hover {
+    color: #f5d49b; /* Hover color */
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px; /* Adjust margin to width of sidebar */
+    padding: 2rem;
+    width: calc(100% - 250px); /* Full width minus sidebar width */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #4a6275; /* Light muted blue */
+    padding: 2rem;
+    color: #f5f7f9;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Content Section */
+.content-section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.content-section h2 {
+    font-size: 1.5rem;
+    color: #2e3a44;
+    margin-bottom: 1rem;
+}
+
+.content-section p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #f5f7f9;
+    color: #666;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+/* Responsive adjustments */
+
+/* Media query for tablets (768px and below) */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Narrow the sidebar slightly for tablets */
+        position: fixed;
+        height: 100vh;
+        padding-top: 1rem;
+    }
+
+    .main-content {
+        margin-left: 200px;
+        padding: 1.5rem;
+        width: calc(100% - 200px);
+    }
+
+    .sidebar ul li a {
+        font-size: 0.9rem; /* Slightly smaller text in sidebar */
+    }
+}
+
+/* Media query for mobile (480px and below) */
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative; /* Sidebar moves above content */
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar .logo {
+        display: none; /* Hide logo on mobile for more space */
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar ul li {
+        margin: 0.5rem;
+    }
+
+    .sidebar ul li a {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+
+    .main-content {
+        margin: 0;
+        width: 100%; /* Full width on mobile */
+        padding: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem; /* Smaller title */
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
