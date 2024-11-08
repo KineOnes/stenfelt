@@ -6,58 +6,49 @@
     <title>Forside - Stenfeltbakken Grendelag</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="flex flex-col h-screen bg-gray-100 text-gray-900">
+<body class="flex flex-col min-h-screen bg-gray-100 text-gray-900">
 
     <!-- Sidebar Navigation -->
-    <div class="flex h-full">
+    <div class="flex flex-1">
         <nav class="w-64 bg-gray-800 text-white p-4 fixed h-full">
             <div class="text-center mb-8 text-xl font-bold text-yellow-300">Stenfeltbakken Grendelag</div>
             <ul class="space-y-4 text-center">
                 <li><a href="index.html" class="block py-2 text-gray-200 hover:text-yellow-300">Forside</a></li>
-                <li><a href="parking.html" class="block py-2 text-gray-200 hover:text-yellow-300">Info om parkering</a></li>
-                <li><a href="community-house.html" class="block py-2 text-gray-200 hover:text-yellow-300">Grendehusene</a></li>
-                <li><a href="previous-cases.html" class="block py-2 text-gray-200 hover:text-yellow-300">Tidligere saker</a></li>
-                <li><a href="bylaws.html" class="block py-2 text-gray-200 hover:text-yellow-300">Vedtekter</a></li>
-                <li><a href="board.html" class="block py-2 text-gray-200 hover:text-yellow-300">Styre/utvalg</a></li>
-                <li><a href="rules.html" class="block py-2 text-gray-200 hover:text-yellow-300">Info og alm. regler</a></li>
-                <li><a href="assemblies.html" class="block py-2 text-gray-200 hover:text-yellow-300">Generalforsamlinger</a></li>
-                <li><a href="suppliers.html" class="block py-2 text-gray-200 hover:text-yellow-300">Leverandører</a></li>
-                <li><a href="colors.html" class="block py-2 text-gray-200 hover:text-yellow-300">Farger</a></li>
+                <li><a href="parkering.html" class="block py-2 text-gray-200 hover:text-yellow-300">Info om parkering</a></li>
+                <li><a href="grendehusene.html" class="block py-2 text-gray-200 hover:text-yellow-300">Grendehusene</a></li>
+                <li><a href="tidligere-saker" class="block py-2 text-gray-200 hover:text-yellow-300">Tidligere saker</a></li>
+                <li><a href="vedtekter.html" class="block py-2 text-gray-200 hover:text-yellow-300">Vedtekter</a></li>
+                <li><a href="styre-utvalg.html" class="block py-2 text-gray-200 hover:text-yellow-300">Styre/utvalg</a></li>
+                <li><a href="info-regler.html" class="block py-2 text-gray-200 hover:text-yellow-300">Info og alm.regler</a></li>
+                <li><a href="generalforsamlinger.html" class="block py-2 text-gray-200 hover:text-yellow-300">Generalforsamlinger</a></li>
+                <li><a href="leverandører.html" class="block py-2 text-gray-200 hover:text-yellow-300">Leverandører</a></li>
+                <li><a href="farger.html" class="block py-2 text-gray-200 hover:text-yellow-300">Farger</a></li>
             </ul>
         </nav>
 
         <!-- Main Content Area with Centered, Narrow Width -->
-        <div class="flex-1 ml-64 p-8 flex justify-center">
-            <div class="w-full max-w-3xl">
-                <!-- Hero Section with Background Image -->
-                <section class="relative bg-cover bg-center text-white rounded-lg p-12 mb-6"
-                    style="background-image: url('images/stenfelt_drone1.jpeg'); height: 300px;">
-                    <div class="absolute inset-0 bg-black opacity-30 rounded-lg"></div> <!-- Overlay for text contrast -->
-                    <div class="relative text-center">
-                        <h1 class="text-4xl font-semibold mb-2">Velkommen til Stenfeltbakken Grendelag</h1>
-                    </div>
+        <main class="flex-1 ml-64 p-8 flex flex-col">
+            <div class="w-full max-w-3xl mx-auto">
+                <!-- Hero Section -->
+                <section class="bg-cover bg-center text-white rounded-lg p-12 mb-6" style="background-image: url('images/stenfelt_drone1.jpeg');">
+                    <h1 class="text-3xl font-semibold mb-2">Velkommen til Stenfeltbakken Grendelag</h1>
                 </section>
 
-                <!-- Content Section -->
-                <section class="bg-white p-6 rounded-lg shadow mb-6">
-                    <h2 class="text-2xl font-semibold text-gray-800 mb-4">New Safety Fence</h2>
-                    <p class="text-gray-600">A new safety fence has been installed along the walkway...</p>
-                </section>
-                
-                <!-- Example of Another Content Section -->
-                <section class="bg-white p-6 rounded-lg shadow mb-6">
-                    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Parking Regulations</h2>
-                    <p class="text-gray-600">Parking regulations have been updated for guest spots...</p>
-                    <button class="mt-4 px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700">Les mer</button>
+                <!-- Blog Post Section -->
+                <section id="blog-post" class="bg-white p-6 rounded-lg shadow mb-6">
+                    <!-- Blog content will be loaded here by JavaScript -->
                 </section>
             </div>
-        </div>
+        </main>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-200 text-gray-600 text-center p-4 mt-auto">
+    <footer class="bg-gray-200 text-gray-600 text-center p-4">
         <p>&copy; 2024 Stenfeltbakken Grendelag. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript to Fetch and Display the Blog Post -->
+    <script src="script.js"></script>
 
 </body>
 </html>
