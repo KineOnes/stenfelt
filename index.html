@@ -34,9 +34,13 @@
                     <h1 class="text-3xl font-semibold mb-2">Velkommen til Stenfeltbakken Grendelag</h1>
                 </section>
 
-                <!-- Blog Post Section -->
-                <section id="blog-post" class="bg-white p-6 rounded-lg shadow mb-6">
-                    <!-- Blog content will be loaded here by JavaScript -->
+                <!-- Blog Posts List Section -->
+                <section id="blog-posts-list" class="space-y-6"></section>
+
+                <!-- Single Blog Post View, initially hidden -->
+                <section id="single-post-view" class="bg-white p-6 rounded-lg shadow mb-6 hidden">
+                    <button id="backButton" class="bg-gray-800 text-white px-4 py-2 mb-4 rounded">Back to Blog List</button>
+                    <div id="single-post-content"></div>
                 </section>
             </div>
         </main>
@@ -49,6 +53,5 @@
 
     <!-- JavaScript to Fetch and Display the Blog Post -->
     <script src="script.js"></script>
-
 </body>
 </html>
