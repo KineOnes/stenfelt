@@ -29,9 +29,8 @@ html, body {
     color: #f5f7f9;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     padding-top: 2rem;
-    position: fixed;
 }
 
 .sidebar .logo {
@@ -73,9 +72,21 @@ html, body {
 
 /* Main Content */
 .main-content {
-    margin-left: 250px; /* Adjust margin to width of sidebar */
     padding: 2rem;
-    width: calc(100% - 250px); /* Full width minus sidebar width */
+}
+
+/* Right Sidebar */
+aside {
+    width: 250px;
+    background-color: #f5f7f9;
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+aside h2 {
+    font-size: 1.2rem;
+    color: #2e3a44;
 }
 
 /* Hero Section */
@@ -128,70 +139,16 @@ footer {
 }
 
 /* Responsive adjustments */
-
-/* Media query for tablets (768px and below) */
 @media (max-width: 768px) {
-    .sidebar {
-        width: 200px; /* Narrow the sidebar slightly for tablets */
-        position: fixed;
-        height: 100vh;
-        padding-top: 1rem;
-    }
-
-    .main-content {
-        margin-left: 200px;
-        padding: 1.5rem;
-        width: calc(100% - 200px);
-    }
-
-    .sidebar ul li a {
-        font-size: 0.9rem; /* Slightly smaller text in sidebar */
-    }
-}
-
-/* Media query for mobile (480px and below) */
-@media (max-width: 480px) {
-    .sidebar {
+    .sidebar,
+    aside {
         width: 100%;
         height: auto;
-        position: relative; /* Sidebar moves above content */
-        padding: 0.5rem;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .sidebar .logo {
-        display: none; /* Hide logo on mobile for more space */
-    }
-
-    .sidebar ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .sidebar ul li {
-        margin: 0.5rem;
-    }
-
-    .sidebar ul li a {
-        font-size: 0.85rem;
-        padding: 0.5rem;
     }
 
     .main-content {
         margin: 0;
-        width: 100%; /* Full width on mobile */
+        width: 100%;
         padding: 1rem;
-    }
-
-    .hero h1 {
-        font-size: 1.8rem; /* Smaller title */
-    }
-
-    .hero p {
-        font-size: 1rem;
     }
 }
