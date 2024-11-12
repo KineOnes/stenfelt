@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styre og grendelagsutvalg - Stenfeltbakken Grendelag</title>
+    <title>Styre/grendelagsutvalg - Stenfeltbakken Grendelag</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to custom CSS -->
 </head>
 <body class="flex flex-col min-h-screen bg-gray-100 text-gray-900">
 
     <div class="flex flex-1">
         <!-- Left Sidebar Navigation -->
-        <nav class="w-64 bg-gray-800 text-white p-4 fixed h-full">
+        <nav class="w-64 bg-gray-800 text-white p-4">
             <div class="text-center mb-8 text-xl font-bold text-yellow-300">Stenfeltbakken Grendelag</div>
             <ul class="space-y-4 text-center">
                 <li><a href="index.html" class="block py-2 text-gray-200 hover:text-yellow-300">Forside</a></li>
@@ -19,7 +19,7 @@
                 <li><a href="grendehusene.html" class="block py-2 text-gray-200 hover:text-yellow-300">Grendehusene</a></li>
                 <li><a href="tidligere-saker.html" class="block py-2 text-gray-200 hover:text-yellow-300">Tidligere saker</a></li>
                 <li><a href="vedtekter.html" class="block py-2 text-gray-200 hover:text-yellow-300">Vedtekter</a></li>
-                <li><a href="styre-utvalg.html" class="block py-2 text-yellow-300 hover:text-yellow-300">Styre/utvalg</a></li>
+                <li><a href="styre-utvalg.html" class="block py-2 text-gray-200 hover:text-yellow-300">Styre/utvalg</a></li>
                 <li><a href="info-regler.html" class="block py-2 text-gray-200 hover:text-yellow-300">Info og alm.regler</a></li>
                 <li><a href="generalforsamlinger.html" class="block py-2 text-gray-200 hover:text-yellow-300">Generalforsamlinger</a></li>
                 <li><a href="leverandører.html" class="block py-2 text-gray-200 hover:text-yellow-300">Leverandører</a></li>
@@ -27,110 +27,103 @@
             </ul>
         </nav>
 
-        <!-- Main Content Area with Header and Content -->
-        <main class="flex-1 ml-64 p-8 flex flex-col">
-            <div class="w-full max-w-3xl mx-auto">
-                <!-- Hero Section for Header -->
-                <section class="bg-cover bg-center text-white rounded-lg p-12 mb-6" style="background-image: url('images/stenfelt_drone1.jpeg');">
-                    <h1 class="text-3xl font-semibold mb-2">Styre og grendelagsutvalg</h1>
-                </section>
-
-
         <!-- Main Content Area with Centered, Narrow Width -->
         <main class="flex-1 p-8">
             <div class="w-full max-w-3xl mx-auto">
-                <!-- Main Title -->
-                <h1 class="main-title">Styret og grendelagsutvalg</h1>
-                <p class="text-center mt-4">Følgende personer utgjør styre og grendelagsutvalg for perioden 2023-2024.</p>
-
-                <!-- Styret Section -->
-                <section>
-                    <h2 class="section-title">Styret</h2>
-                    <p class="contact-info">
-                        Kontaktmail til styret: <a href="mailto:styret@stenfelt.no">styret@stenfelt.no</a><br>
-                        Adressen til grendelaget: Stenfeltbakken 73, 1405 Langhus<br>
-                        Organisasjonsnummer: 996 292 290
-                    </section>     
-
-                    <section>
-                    </p>
-                    <table class="info-table">
-                        <tr>
-                            <th>Navn</th>
-                            <th>Nr</th>
-                            <th>Funksjon</th>
-                        </tr>
-                        <tr>
-                            <td>Morten Landre</td>
-                            <td>79</td>
-                            <td>Styreleder</td>
-                        </tr>
-                        <tr>
-                            <td>Irina Sigurdson</td>
-                            <td>87</td>
-                            <td>Kasserer</td>
-                        </tr>
-                        <tr>
-                            <td>Ole Kristian Arvesen</td>
-                            <td>71</td>
-                            <td>El-bil ansvarlig</td>
-                        </tr>
-                        <tr>
-                            <td>Trond Hestad</td>
-                            <td>191</td>
-                            <td></td>
-                        </tr>
-                    </table>
+                <!-- Hero Section -->
+                <section class="bg-cover bg-center text-white rounded-lg p-12 mb-6" style="background-image: url('images/stenfelt_drone1.jpeg');">
+                    <h1 class="text-3xl font-semibold mb-2">Velkommen til Stenfeltbakken Grendelag</h1>
                 </section>
 
-                <!-- Grendelagsutvalget Section -->
-                <section>
-                    <h2 class="section-title">Grendelagsutvalget</h2>
-                    <p class="contact-info">
-                        Kontaktmail til grendelagsutvalget: <a href="mailto:grendelagsutvalget@stenfelt.no">grendelagsutvalget@stenfelt.no</a>
-                    </p>
-                    <table class="info-table">
-                        <tr>
-                            <th>Navn</th>
-                            <th>Nr</th>
-                            <th>Funksjon</th>
-                        </tr>
-                        <tr>
-                            <td>Kaja Gran Ludvigsen</td>
-                            <td>67</td>
-                            <td>Grendelagsutvalget</td>
-                        </tr>
-                        <tr>
-                            <td>Tina Fjeldstad</td>
-                            <td>173</td>
-                            <td>Grendelagsutvalget</td>
-                        </tr>
-                        <tr>
-                            <td>Kate Kvifte</td>
-                            <td>167</td>
-                            <td>Grendelagsutvalget</td>
-                        </tr>
-                        <tr>
-                            <td>Hanne Ingeborg Berg-Skaalerud</td>
-                            <td>25</td>
-                            <td>Grendelagsutvalget</td>
-                        </tr>
-                    </table>
-                </section>
+                <!-- Main Content Section -->
+                <section class="bg-white p-6 rounded-lg shadow">
+                    <h2 class="text-2xl font-bold mb-4">Styre og grendelagsutvalg</h2>
+                    <p>Følgende personer utgjør styre og grendelagsutvalg for perioden 2023-2024.</p>
 
-                <!-- Additional Information Section -->
-                <section class="footer-info">
-                    <h2 class="section-title">Web-ansvarlig</h2>
+                    <h3 class="text-xl font-semibold mt-6">Styret</h3>
+
+                    <p>Kontaktmail til styret: styret@stenfelt.no</p>
+                    <p>Adressen til grendelaget: Stenfeltbakken 73, 1405 Langhus</p>
+                    <p>Organisasjonsnummer: 996 292 290</p>
+
+            <table class="w-full border border-gray-200 mb-8 text-center">
+                <thead>
+                    <tr class="bg-gray-100">
+                        <th class="py-2 px-4 border-b">Navn</th>
+                        <th class="py-2 px-4 border-b">Nr</th>
+                        <th class="py-2 px-4 border-b">Funksjon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 border-b">Morten Landre</td>
+                        <td class="py-2 px-4 border-b">79</td>
+                        <td class="py-2 px-4 border-b">Styreleder</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">Irina Sigurdson</td>
+                        <td class="py-2 px-4 border-b">87</td>
+                        <td class="py-2 px-4 border-b">Kasserer</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">Ole Kristian Arvesen</td>
+                        <td class="py-2 px-4 border-b">71</td>
+                        <td class="py-2 px-4 border-b">El-bil ansvarlig</td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">Trond Hestad</td>
+                        <td class="py-2 px-4 border-b">191</td>
+                        <td class="py-2 px-4 border-b">Styremedlem</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="text-2xl font-semibold mb-4 text-center">Grendelagsutvalget</h2>
+                    <p class="text-center mb-6">Kontaktmail til grendelagsutvalget: <a href="mailto:grendelagsutvalget@stenfelt.no" class="text-blue-500">grendelagsutvalget@stenfelt.no</a></p>
+                    <table class="w-full border border-gray-200 mb-8 text-center">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="py-2 px-4 border-b">Navn</th>
+                                <th class="py-2 px-4 border-b">Nr</th>
+                                <th class="py-2 px-4 border-b">Funksjon</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Kaja Gran Ludvigsen</td>
+                                <td class="py-2 px-4 border-b">67</td>
+                                <td class="py-2 px-4 border-b">Grendelagsutvalget</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Tina Fjeldstad</td>
+                                <td class="py-2 px-4 border-b">173</td>
+                                <td class="py-2 px-4 border-b">Grendelagsutvalget</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Kate Kvifte</td>
+                                <td class="py-2 px-4 border-b">167</td>
+                                <td class="py-2 px-4 border-b">Grendelagsutvalget</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">Hanne Ingeborg Berg-Skaalerud</td>
+                                <td class="py-2 px-4 border-b">25</td>
+                                <td class="py-2 px-4 border-b">Grendelagsutvalget</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 class="text-xl font-semibold mt-8 mb-4">Web-ansvarlig</h2>
                     <p>Kine Ones (177)</p>
 
-                    <h2 class="section-title">Revisor</h2>
+                    <h2 class="text-xl font-semibold mt-8 mb-4">Revisor</h2>
                     <p>Anne Odden Regnskap.</p>
 
-                    <h2 class="section-title">Regnskapsfører</h2>
-                    <p>Katrin Pettersen, mail: <a href="mailto:kp@rgreg.no">kp@rgreg.no</a></p>
-                </section>
+                    <h2 class="text-xl font-semibold mt-8 mb-4">Regnskapsfører</h2>
+                    <p>Katrin Pettersen, <a href="mailto:kp@rgreg.no" class="text-blue-500">kp@rgreg.no</a></p>
+                
+            </section>
             </div>
+            
         </main>
+
 
         <!-- Right Sidebar for Contact Information -->
         <aside class="w-64 bg-gray-100 text-gray-800 p-4">
