@@ -1,0 +1,24 @@
+name: Deploy to One.com
+
+on:
+  push:
+    branches:
+      - main  # Change this if you use another branch for deployment
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Deploy to One.com via SFTP
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SFTP_HOST }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          source: "."
+          target: "/www"
+          strip_components: 1
